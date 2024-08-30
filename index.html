@@ -7,9 +7,14 @@
     <!-- Includi Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+     <!-- Includi Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
     <style>
         /* Stile personalizzato per il titolo */
         .custom-title {
+            font-family: 'Playfair Display', serif;
+            color: rgb(167, 180, 197);
             font-size: 2.5rem;
             font-weight: bold;
             text-align: center;
@@ -22,11 +27,19 @@
             margin-top: 10px;
             margin-bottom: 20px;
         }
+        
+        /* Stile per la sezione sotto l'immagine del carosello */
+        .carousel-caption-below {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.6); /* sfondo semi-trasparente */
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <h2>Lampedusa</h2>
+    <div class="custom-title">
+        Lampedusa
      </div>
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -48,7 +61,7 @@
         
         <div class="carousel-item active">
             <img src="2-Cala-Pisana.jpg" class="d-block w-100" alt="Immagine 1">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption-below">
                 <h5>Cala Pisana</h5>
                 <p>Descrizione breve dell'immagine 1.</p>
             </div>
@@ -56,7 +69,7 @@
         
         <div class="carousel-item">
             <img src="cala francese.jpg" class="d-block w-100" alt="Immagine 2">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption-below">
                 <h5>Cala Francese</h5>
                 <p>Descrizione breve dell'immagine 2.</p>
             </div>
